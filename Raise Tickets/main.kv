@@ -1,0 +1,73 @@
+<MenuScreen>:
+    BoxLayout:
+        MDScrollView:
+            MDList:
+                id: ListofGroups
+
+<GroupScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        id: mainest_layout
+        Button:
+            text: 'PREVIOUS'
+            size_hint: (1, .05)
+            background_color: (0, 0, 1)
+            on_release:
+                root.manager.transition.direction = "right"
+                root.manager.current = 'Menu'
+        BoxLayout:
+            orientation: 'horizontal'
+            md_bg_color: (0, 0, 0)
+            id: main_layout
+
+
+            BoxLayout:
+                orientation: 'vertical'
+                id: data_layout
+                size_hint: (.3, 1)
+
+                GridLayout:
+                    cols: 2
+                    spacing: 5
+
+                    Label:
+                        font_size: 20
+                        text: 'SubOrder Id'
+                    TextInput:
+                        id: Suborder
+                        font_size: 20
+                        multiline: False
+
+                    Label:
+                        font_size: 20
+                        text: 'AWB Number'
+                    TextInput:
+                        id: AWB
+                        font_size: 20
+                        multiline: False
+
+                    Label:
+                        font_size: 20
+                        text: 'Packet Id'
+                    TextInput:
+                        id: Packet
+                        font_size: 20
+                        multiline: False
+
+                Button:
+                    text: 'Show Question Selection'
+                    size_hint: (1, .05)
+                    background_color: (0, 1, 0)
+                    on_release: root.available_options()
+                Button:
+                    text: 'Change Video'
+                    size_hint: (1, .05)
+                    on_release: root.change_video()
+
+
+
+            GridLayout:
+                spacing: 5
+                cols: 2
+                id: img_layout
+

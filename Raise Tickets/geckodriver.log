@@ -1,0 +1,72 @@
+1693992942896	geckodriver	INFO	Listening on 127.0.0.1:62944
+1693992945943	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62945" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ishan\\AppData\\Local\\Temp\\rust_mozprofilewRYxdW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693992946602	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1693992946608	Marionette	INFO	Listening on port 62953
+Read port: 62953
+WebDriver BiDi listening on ws://127.0.0.1:62945
+1693992946767	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62945/devtools/browser/6fab45ac-bb48-4f5a-b353-f4c767036ad7
+JavaScript error: https://d3a8jd39894qan.cloudfront.net/container/main.00bde307fe89ae6cbd1f.js, line 1: ChunkLoadError: Loading chunk 2131 failed.
+(error: https://d3a8jd39894qan.cloudfront.net/container/2131.f00d3011ca7f8c9d68fc.js)
+JavaScript error: https://d3a8jd39894qan.cloudfront.net/container/main.00bde307fe89ae6cbd1f.js, line 1: ChunkLoadError: Loading chunk 4593 failed.
+(error: https://d3a8jd39894qan.cloudfront.net/container/4593.e9da3ade4d0e65bb8ebc.js)
+JavaScript error: https://d3a8jd39894qan.cloudfront.net/container/main.00bde307fe89ae6cbd1f.js, line 1: ChunkLoadError: Loading chunk 2131 failed.
+(error: https://d3a8jd39894qan.cloudfront.net/container/2131.f00d3011ca7f8c9d68fc.js)
+1693992962585	Marionette	INFO	Stopped listening on port 62953
+Dynamically enable window occlusion 1
+1693992965951	geckodriver	INFO	Listening on 127.0.0.1:63023
+1693992968983	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63024" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ishan\\AppData\\Local\\Temp\\rust_mozprofilePwyTpY"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693992969346	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1693992969374	Marionette	INFO	Listening on port 63031
+Read port: 63031
+WebDriver BiDi listening on ws://127.0.0.1:63024
+1693992969544	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63024/devtools/browser/c6d182cf-6664-456b-b79d-52e845c0d98b
+JavaScript error: https://d3a8jd39894qan.cloudfront.net/container/main.00bde307fe89ae6cbd1f.js, line 1: ChunkLoadError: Loading chunk 4593 failed.
+(error: https://d3a8jd39894qan.cloudfront.net/container/4593.e9da3ade4d0e65bb8ebc.js)
+JavaScript error: https://d3a8jd39894qan.cloudfront.net/container/main.00bde307fe89ae6cbd1f.js, line 1: ChunkLoadError: Loading chunk 2131 failed.
+(error: https://d3a8jd39894qan.cloudfront.net/container/2131.f00d3011ca7f8c9d68fc.js)
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://supplier.meesho.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://supplier.meesho.com."
+1693993333053	geckodriver	INFO	Listening on 127.0.0.1:63150
+1693993336072	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63151" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ishan\\AppData\\Local\\Temp\\rust_mozprofileOG1qq2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693993337036	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1693993337044	Marionette	INFO	Listening on port 63158
+Read port: 63158
+WebDriver BiDi listening on ws://127.0.0.1:63151
+1693993337284	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63151/devtools/browser/8f60ec04-e917-4fdc-aa79-fff6b051c487
+JavaScript error: https://d3a8jd39894qan.cloudfront.net/container/main.00bde307fe89ae6cbd1f.js, line 1: ChunkLoadError: Loading chunk 4593 failed.
+(error: https://d3a8jd39894qan.cloudfront.net/container/4593.e9da3ade4d0e65bb8ebc.js)
+JavaScript error: https://d3a8jd39894qan.cloudfront.net/container/main.00bde307fe89ae6cbd1f.js, line 1: ChunkLoadError: Loading chunk 2131 failed.
+(error: https://d3a8jd39894qan.cloudfront.net/container/2131.f00d3011ca7f8c9d68fc.js)
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://supplier.meesho.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://supplier.meesho.com."
+1693993367131	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, channelStatus: 2152398878, errorCode: 2, reason: error
+1693993734335	geckodriver	INFO	Listening on 127.0.0.1:63324
+1693993737367	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63325" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ishan\\AppData\\Local\\Temp\\rust_mozprofiletxgCg4"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693993737985	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1693993737991	Marionette	INFO	Listening on port 63332
+Read port: 63332
+WebDriver BiDi listening on ws://127.0.0.1:63325
+1693993738152	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63325/devtools/browser/eebb15a9-71c5-4570-99dd-fec9706cd2bf
+JavaScript error: https://d3a8jd39894qan.cloudfront.net/container/main.00bde307fe89ae6cbd1f.js, line 1: ChunkLoadError: Loading chunk 2131 failed.
+(error: https://d3a8jd39894qan.cloudfront.net/container/2131.f00d3011ca7f8c9d68fc.js)
+JavaScript error: https://d3a8jd39894qan.cloudfront.net/container/main.00bde307fe89ae6cbd1f.js, line 1: ChunkLoadError: Loading chunk 4593 failed.
+(error: https://d3a8jd39894qan.cloudfront.net/container/4593.e9da3ade4d0e65bb8ebc.js)
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://supplier.meesho.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://supplier.meesho.com."
+[Parent 18280, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:787
