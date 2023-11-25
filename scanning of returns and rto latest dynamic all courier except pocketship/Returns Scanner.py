@@ -82,7 +82,7 @@ for x in df.index:
             df_end[i] = df.iloc[x, 0]
 print(df_start, df_end)
 scanned_data = {x: [] for x in df.iloc[:, 0]}
-print(scanned_data)
+print(scanned_data, 'kjbkjbjkhb')
 c = 0
 update()
 

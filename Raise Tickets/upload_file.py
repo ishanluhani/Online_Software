@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 def run_file(data, description='', link=''):
     chrome_options = Options()
     chrome_options.add_experimental_option("detach", True)
-    driver = webdriver.Chrome('chromedriver.exe', chrome_options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
 
     driver.get(link)
     sleep(10)

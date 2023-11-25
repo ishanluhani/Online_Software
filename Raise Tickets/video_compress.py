@@ -1,6 +1,7 @@
 # Importing the module
 from moviepy.editor import *
 import os
+from tkinter.filedialog import askopenfilename
 
 # def use(path):
 #
@@ -56,4 +57,4 @@ def use(path):
     return out_path
 
 if __name__ == '__main__':
-    use('//RASPBERRYPI/128gbSSD/returns ex/Group 1/VID_20230721_144742 - Copy - Copy.mp4')
+    use(askopenfilename())

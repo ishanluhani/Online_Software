@@ -29,7 +29,7 @@ def submit(column_idx, target_folder, lst):
 
 
 root = Tk()
-path_target = 'D:\meesho customer database'
+path_target = 'D:\ONLINE Data\Meesho Customer DataBase'
 
 text_in_place_of_sub_order = 'Text To Search'.upper()
 text_in_place_of_column = 'Column Number'.upper()

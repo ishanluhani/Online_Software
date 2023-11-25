@@ -18,7 +18,7 @@ def shrink(in_file):
         for i in range(reader.numPages):
             page = reader.getPage(i)
             page_es = page.extractText()
-            if '_' in page_es:
+            if '_' in page_es and i != 254:
                 page_es = page_es.split()
                 page.mediaBox.lowerLeft = [0, 450]
                 writer.addPage(page)
@@ -100,8 +100,8 @@ def skuize_data(data, name):
         if i[1]:
             if last_size != i[1].split()[0]:
                 filtered_data.append('-----/------')
-                line_writer.rect(206, 0, 1, 150, style='F')
-                line_writer.rect(208, 0, 1, 150, style='F')
+                line_writer.rect(205, 0, 2, 150, style='F')
+                line_writer.rect(222, 0, 2, 150, style='F')
             else:
                 if last != i[1]:
                     filtered_data.append('-----')

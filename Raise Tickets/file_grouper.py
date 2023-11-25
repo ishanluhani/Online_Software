@@ -58,6 +58,8 @@ def ask_and_group():
 
 
     group = already(path)
+    return group, path
 
 
-
+if __name__ == '__main__':
+    print(ask_and_group())

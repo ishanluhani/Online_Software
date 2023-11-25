@@ -149,15 +149,17 @@ class MainApp(MDApp):
     def on_start(self):
         file_grouper.ask_and_group()
         data = file_grouper.group
+        print('iuyiggikug', data)
         img_to_text.calibrate(data)
         print(img_to_text.data)
-        try:
-            for i in img_to_text.data:
-                self.menuscreen.ids.ListofGroups.add_widget(OneLineListItem(text=i, on_press=lambda x: self.change_screen(x)))
-                self.groupscreen = GroupScreen(name=i)
-                self.manager.add_widget(self.groupscreen)
-        except Exception as e:
-            print(e, 'errorrrr')
+        # try:
+        for i in img_to_text.data:
+            self.menuscreen.ids.ListofGroups.add_widget(OneLineListItem(text=i, on_press=lambda x: self.change_screen(x)))
+            print(i)
+            self.groupscreen = GroupScreen(name=i)
+            self.manager.add_widget(self.groupscreen)
+        # except Exception as e:
+        #     print(e, 'errorrrr')
 
     def change_screen(self, x):
         self.manager.transition.direction = 'left'

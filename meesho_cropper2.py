@@ -24,7 +24,7 @@ def shrink(in_file):
                 page.mediaBox.lowerLeft = [0, 450]
                 writer.addPage(page)
         in_file = in_file.replace('\\', '/')
-        f = fr'D:/sub order labels/{datetime.datetime.now().day}.{datetime.datetime.now().month}.{datetime.datetime.now().year} {in_file.split(r"/")[-1]}'
+        f = fr'D:/ONLINE Data/Suborder Labels/{datetime.datetime.now().day}.{datetime.datetime.now().month}.{datetime.datetime.now().year} {in_file.split(r"/")[-1]}'
         with open(f, 'wb') as outfp:
             writer.write(outfp)
             return f
@@ -81,7 +81,7 @@ def get_data(in_file):
     ans['Suborders'] = pandas.Series(sub_order)
     ans['AWB'] = pandas.Series(awbs)
     ans['Address'] = pandas.Series(address)
-    ans.to_excel(rf'D:\meesho customer database\{in_file.split("/")[-1][:-4]}.xlsx', index=False)
+    ans.to_excel(rf'D:\ONLINE Data\Meesho Customer DataBase\{in_file.split("/")[-1][:-4]}.xlsx', index=False)
 
 
 def skuize_data(data, name):
