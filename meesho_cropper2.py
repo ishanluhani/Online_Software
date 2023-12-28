@@ -45,6 +45,8 @@ def get_data(in_file):
         page = pages.split()
         if 'Fold' in page:
             sub_order.append(page[page.index('Fold')-1])
+        else:
+            sub_order.append('Not Found')
         if 'Product' in page and not page[page.index('Product')-1].startswith('MSS'):
             awbs.append(page[page.index('Product')-1])
             caught_awb = True
@@ -100,11 +102,14 @@ def skuize_data(data, name):
                 data[i][1] = data[i][1].replace(data_point, str(sku_data[data_point]))
             else:
                 data[i][1] = data[i][1].replace(data_point, str(random.randint(65146, 1000000000)))
-            data[i][1] = data[i][1].replace(size_point, str(sizes.index(size_point)+1))
-            data[i][1] = data[i][1].replace(data[i][1].split()[1], data[i][1].split()[1].zfill(5))
-            print(data[i][1], f'{data[i][1][0]} {data[i][1].split()[1].zfill(5)} {data[i][1].split()[2]}', 'hihi')
-            data[i][1] = f'{data[i][1][0]} {data[i][1].split()[1].zfill(5)} {data[i][1].split()[2]}'
-            data[i][1] = int(data[i][1].replace(' ', ''))
+            try:
+                data[i][1] = data[i][1].replace(size_point, str(sizes.index(size_point)+1))
+                data[i][1] = data[i][1].replace(data[i][1].split()[1], data[i][1].split()[1].zfill(5))
+                print(data[i][1], f'{data[i][1][0]} {data[i][1].split()[1].zfill(5)} {data[i][1].split()[2]}', 'hihi')
+                data[i][1] = f'{data[i][1][0]} {data[i][1].split()[1].zfill(5)} {data[i][1].split()[2]}'
+                data[i][1] = int(data[i][1].replace(' ', ''))
+            except:
+                data[i][1] = -100
 
         else:
             data[i][1] = data[i][1] = 0
@@ -113,6 +118,7 @@ def skuize_data(data, name):
     reader = PyPDF2.PdfFileReader(name)
     writer = PyPDF2.PdfFileWriter()
     line_writer = fpdf.FPDF()
+    # line_writer.set_fill_color(r=255, g=0, b=0)
     data.sort(key=lambda x: x[1])
     print(data, 'gtfrf')
     filtered_data = []
@@ -123,12 +129,12 @@ def skuize_data(data, name):
         if i[1]:
             if last_size != str(i[1])[0]:
                 filtered_data.append('||||||/||||||')
-                line_writer.rect(206, 0, 1, 150, style='F')
-                line_writer.rect(208, 0, 1, 150, style='F')
+                line_writer.rect(204, 0, 2, 150, style='F')
+                line_writer.rect(207, 0, 2, 150, style='F')
             else:
                 if last != i[1]:
                     filtered_data.append('|||||||')
-                    line_writer.rect(206, 0, 1, 150, style='F')
+                    line_writer.rect(207, 0, 2, 150, style='F')
             if i[1] and str(i[1])[-1] != '1':
                 filtered_data.append('------')
                 line_writer.rect(0, 120, 210, 2, style='F')

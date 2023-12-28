@@ -31,6 +31,6 @@ def compress_video(video_full_path, output_file_name, target_size):
                   **{'c:v': 'libx264', 'b:v': video_bitrate, 'pass': 2, 'c:a': 'aac', 'b:a': audio_bitrate}
                   ).overwrite_output().run()
 
-# Compress input.mp4 to 50MB and save as output.mp4
+# Compress input.mp4 to 20MB and save as output.mp4
 if __name__ == '__main__':
     compress_video(tkinter.filedialog.askopenfilename(), os.path.join(tkinter.filedialog.askdirectory(), 'output.mp4'), 20 * 1000)

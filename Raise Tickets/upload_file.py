@@ -1,25 +1,21 @@
 from time import sleep
-from selenium import webdriver
+import undetected_chromedriver as uc
 from selenium.webdriver.chrome.options import Options
 
 
 
 def run_file(data, description='', link=''):
-    chrome_options = Options()
-    chrome_options.add_experimental_option("detach", True)
-    driver = webdriver.Chrome(options=chrome_options)
+    chrome_options = uc.ChromeOptions()
+    driver = uc.Chrome(options=chrome_options)
 
     driver.get(link)
     sleep(10)
     # driver.get('https://youtube.com')
-    try:
-        email = driver.find_element_by_id('mui-1')
-        email.send_keys('neetuluhani@gmail.com')
-        password = driver.find_element_by_id('mui-2')
-        password.send_keys('1@Kajukishmish')
-        driver.find_element_by_xpath('/html/body/div/div/div[2]/div[1]/form/button[2]').send_keys("\n")
-    except:
-        pass
+    email = driver.find_element(by='xpath', value='/html/body/div/div/div[2]/div[1]/form/div[1]/div/input')
+    email.send_keys('neetuluhani@gmail.com')
+    password = driver.find_element(by='xpath', value='/html/body/div/div/div[2]/div[1]/form/div[2]/div/input')
+    password.send_keys('1@Kajukishmish')
+    driver.find_element(by='xpath', value='/html/body/div/div/div[2]/div[1]/form/button[2]').send_keys("\n")
 
     try:
 
@@ -32,9 +28,9 @@ def run_file(data, description='', link=''):
 
         driver.get('https://supplier.meesho.com/panel/v3/new/payouts/cicpk/support/1/1/create')
         sleep(5)
-        driver.find_element_by_xpath('/html/body/div[1]/div/main/div/div/div/div/form/div[1]/div[2]/div/input').send_keys(real_data[0])
-        driver.find_element_by_xpath('/html/body/div[1]/div/main/div/div/div/div/form/div[1]/div[4]/div/input').send_keys(real_data[2])
-        driver.find_element_by_xpath('/html/body/div[1]/div/main/div/div/div/div/form/div[1]/div[15]/div/textarea[1]').send_keys(description)
+        driver.find_element(by='xpath', value='/html/body/div[1]/div/main/div/div/div/div/form/div[1]/div[2]/div/input').send_keys(real_data[0])
+        driver.find_element(by='xpath', value='/html/body/div[1]/div/main/div/div/div/div/form/div[1]/div[4]/div/input').send_keys(real_data[2])
+        driver.find_element(by='xpath', value='/html/body/div[1]/div/main/div/div/div/div/form/div[1]/div[15]/div/textarea[1]').send_keys(description)
 
         packet_id = driver.find_element_by_xpath("/html/body/div[1]/div/main/div/div/div/div/form/div[1]/div[7]/div/label/input[@type='file']")
         for i in data_grouper['packet id']:
